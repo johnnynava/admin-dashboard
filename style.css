@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+#mainGrid {
+    display: grid;
+    grid-template-rows: 280px 1fr;
+    grid-template-columns: 535px 1fr;
+    margin: 0px;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content";
+}
+
+.sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+.header {
+    background-color: grey;
+    grid-area: header;
+}
+
+.content {
+    background-color: black;
+    grid-area: content;
+}
