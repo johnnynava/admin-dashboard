@@ -1,28 +1,94 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0px;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    font-family: "Roboto";
 }
 
 #mainGrid {
     display: grid;
-    grid-template-rows: 280px 1fr;
-    grid-template-columns: 535px 1fr;
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 350px 1fr;
     margin: 0px;
     grid-template-areas: 
         "sidebar header"
         "sidebar content";
+    min-height: 100%;
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: purple;
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 50px repeat(11, 40px);
+    grid-template-columns: 50px 3fr;
+    padding: 18px;
+    gap: 12px;
+    align-items: center;
 }
 
 .header {
-    background-color: grey;
+    background-color: whitesmoke;
     grid-area: header;
 }
 
 .content {
-    background-color: black;
+    background-color: rgb(227, 223, 223);
     grid-area: content;
+}
+
+#dashboard {
+    font-size: 30px;
+}
+
+img {
+    justify-self: center;
+    height: 25px
+}
+
+a {
+    justify-self: center;
+    height: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+img[src="icons/dashboard.svg"] {
+    height: 50px;
+}
+
+.sidebar > p {
+    margin: 0px;
+    color: white;
+    font-size: 20px;
 }
