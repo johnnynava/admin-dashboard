@@ -62,7 +62,7 @@ p {
     position: relative;
     box-shadow: 0px 5px 5px darkgray;
     display: grid;
-    grid-template-columns: 1fr 650px;
+    grid-template-columns: 1fr 550px;
     grid-template-rows: 1fr 2fr;
 }
 
@@ -115,4 +115,52 @@ img[src="icons/dashboard.svg"] {
     height: 30px;
     border-radius: 10px;
     border-color: black;
+}
+
+#topRightButtons {
+    display: grid;
+    grid-template-columns: 25px 50px 1fr;
+    padding-left: 150px;
+    padding-right: 50px;
+    gap: 30px;
+    align-items: center;
+    justify-self: right;
+}
+
+#topRightButtons > a > img[src="img/dog.jpg"] {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#topRightButtons > p {
+    font-weight: bold;
+}
+
+#greeting {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding-left: 40px;
+    align-items: center;
+    gap: 20px;
+}
+
+#bigProfile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#hi,
+#name {
+    font-weight: bold;
+}
+
+#hi {
+    font-size: 16px;
+    margin: 10px;
+}
+
+#name {
+    font-size: 26px;
+    margin: 10px;
 }
