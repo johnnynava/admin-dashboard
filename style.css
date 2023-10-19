@@ -216,6 +216,7 @@ button {
     border-radius: 10px;
     margin-right: 30px;
     margin-bottom: 30px;
+    border-left: 8px solid maroon;
 }
 
 .project > span > img  {
@@ -232,8 +233,8 @@ button {
     font-size: 17px;
 }
 
-#projectsHeader {
-    /* position: */
+#projectsHeader,
+#announcementsHeader {
     margin: 0px;
     margin-bottom: 10px;
     align-self: end;
@@ -247,6 +248,27 @@ button {
 
 #announcements {
     grid-area: announcements;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#announcementsBox {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-top: 4px;
+}
+
+.announcementsTitle {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.announcementsDescription {
+    color: rgb(137, 137, 137);
+    font-size: 12px;
+    margin-top: 2px;
+    text-overflow:ellipsis;
 }
 
 #trending {
