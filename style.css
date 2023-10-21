@@ -234,7 +234,8 @@ button {
 }
 
 #projectsHeader,
-#announcementsHeader {
+#announcementsHeader,
+#trendingHeader {
     margin: 0px;
     margin-bottom: 10px;
     align-self: end;
@@ -252,11 +253,15 @@ button {
     margin-top: 30px;
 }
 
-#announcementsBox {
+#announcementsBox,
+#trendingBox {
     background-color: white;
     border-radius: 10px;
+    margin-top: 13px;
+}
+
+#announcementsBox {
     padding: 20px 30px;
-    margin-top: 4px;
 }
 
 .announcementsTitle {
@@ -268,9 +273,44 @@ button {
     color: rgb(137, 137, 137);
     font-size: 12px;
     margin-top: 2px;
-    text-overflow:ellipsis;
 }
 
 #trending {
     grid-area: trending;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#trendingBox {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(4, 50px);
+    padding: 20px;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 16px;
+}
+
+#trendingBox > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#trendingBox > div {
+    /* padding: 1px; */
+}
+
+.usernameTrending,
+.usernameProjectTrending {
+    margin: 0px;
+}
+
+.usernameTrending {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.usernameProjectTrending {
+    color: rgb(137, 137, 137);
 }
